@@ -35,7 +35,7 @@ const Sidebar = ({ isOpen, onClose }) => {
       />
 
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-[246px] shrink-0 overflow-hidden bg-[#17202d] transition-[transform,width,border-color] duration-300 xl:static ${
+        className={`fixed inset-y-0 left-0 z-40 w-[246px] shrink-0 overflow-hidden bg-[#17202d] transition-[transform,width,border-color] duration-300 ${
           isOpen
             ? "translate-x-0 border-r border-white/5 xl:w-[246px]"
             : "-translate-x-full border-r-0 xl:w-0 xl:translate-x-0"

@@ -41,7 +41,7 @@ export default function SalesChart() {
 
       <div className="h-[144px] md:h-[180px]">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ left: -18, top: 5, right: 6, bottom: 0 }}>
+          <LineChart data={data} margin={{ left: 1, top: 5, right: 6, bottom: 0 }}>
             <defs>
               <linearGradient id="colorSales" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.18} />

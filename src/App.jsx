@@ -8,10 +8,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[#151d2a] text-[#c7d0dd]">
-      <div className="flex min-h-screen">
+      <div className="min-h-screen">
         <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
-        <main className="min-w-0 flex-1">
+        <main
+          className={`min-h-screen min-w-0 transition-[margin] duration-300 ${
+            sidebarOpen ? "xl:ml-[246px]" : "xl:ml-0"
+          }`}
+        >
           <Header onToggleSidebar={() => setSidebarOpen((open) => !open)} />
 
           <div className="px-4 py-5 sm:px-6">

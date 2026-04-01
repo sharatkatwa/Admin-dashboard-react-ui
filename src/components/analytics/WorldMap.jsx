@@ -13,6 +13,8 @@ const markers = [
   { lng: 151.2, lat: -33.8 },
 ];
 
+
+
 export default function WorldMap() {
   return (
     <div className="rounded-sm h-98 border border-white/5 bg-[#1B2635] p-4 text-white">
