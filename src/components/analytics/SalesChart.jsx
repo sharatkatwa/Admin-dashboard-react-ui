@@ -27,7 +27,7 @@ const data = [
 export default function SalesChart() {
   return (
     <div className="rounded-sm border border-white/5 bg-[#1B2635] p-4">
-      <div className="mb-3 h-21 flex items-center justify-between">
+      <div className="mb-3 flex items-center justify-between">
         <h2 className="text-[12px] font-semibold text-[#a7b3c5]">Recent Movement</h2>
         <div className="hidden items-center gap-2 md:flex">
           <button className="rounded-sm border border-white/5 bg-[#1f2a39] px-2.5 py-1.5 text-[10px] text-[#94a1b5]">
@@ -39,7 +39,7 @@ export default function SalesChart() {
         </div>
       </div>
 
-      <div className="h-[144px] md:h-[180px]">
+      <div className="h-[180px] md:h-[233px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ left: 1, top: 5, right: 6, bottom: 0 }}>
             <defs>
