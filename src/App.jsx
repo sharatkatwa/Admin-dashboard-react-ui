@@ -1,18 +1,21 @@
-import Analytics from "./screens/Analytics";
+import { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(true);
+
   return (
     <div className="min-h-screen bg-[#151d2a] text-[#c7d0dd]">
       <div className="flex min-h-screen">
-        <Sidebar />
+        <Sidebar isOpen={sidebarOpen} onClose={() => setSidebarOpen(false)} />
 
         <main className="min-w-0 flex-1">
-          <Header />
+          <Header onToggleSidebar={() => setSidebarOpen((open) => !open)} />
 
           <div className="px-4 py-5 sm:px-6">
-            <Analytics />
+            <AppRoutes />
 
             <div className="mt-4 flex items-center justify-between border-t border-white/5 pt-3 text-[11px] text-[#728196]">
               <span>AdminKit ©</span>

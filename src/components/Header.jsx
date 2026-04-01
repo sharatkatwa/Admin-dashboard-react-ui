@@ -1,5 +1,5 @@
 import {
-    Bell,
+  Bell,
   ChevronDown,
   CircleDot,
   Menu,
@@ -8,11 +8,15 @@ import {
   Settings,
 } from 'lucide-react'
 
-const Header = () => {
+const Header = ({ onToggleSidebar }) => {
   return (
     <header className="flex h-[62px] items-center justify-between border-b border-white/5 bg-[#17202d] px-4 sm:px-6">
       <div className="flex min-w-0 items-center gap-3 sm:gap-4">
-        <button className="flex h-8 w-8 items-center justify-center rounded text-[#93a0b4] hover:bg-white/5 hover:text-white">
+        <button
+          type="button"
+          onClick={onToggleSidebar}
+          className="flex h-8 w-8 items-center justify-center rounded text-[#93a0b4] hover:bg-white/5 hover:text-white"
+        >
           <Menu size={17} />
         </button>
         <div className="relative hidden w-[240px] md:block">

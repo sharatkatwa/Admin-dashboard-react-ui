@@ -1,10 +1,10 @@
-import Calendar from "../components/Calendar";
-import DonutChart from "../components/DonutChart";
-import LatestProjects from "../components/LatestProjects";
-import MonthlySales from "../components/MonthlySales";
-import SalesChart from "../components/SalesChart";
-import StatCards from "../components/StatCards";
-import WorldMap from "../components/WorldMap";
+import Calendar from "../components/analytics/Calendar";
+import DonutChart from "../components/analytics/DonutChart";
+import LatestProjects from "../components/analytics/LatestProjects";
+import MonthlySales from "../components/analytics/MonthlySales";
+import SalesChart from "../components/analytics/SalesChart";
+import StatCards from "../components/analytics/StatCards";
+import WorldMap from "../components/analytics/WorldMap";
 
 const Analytics = () => {
   return (

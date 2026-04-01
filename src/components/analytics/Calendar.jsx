@@ -51,6 +51,7 @@ export default function Calendar() {
         classNames={{
           root: "w-full",
           months: "flex justify-center",
+          nav:'hidden',
           month: "w-full space-y-3",
           month_caption: "hidden",
           month_grid: "w-full border-collapse",
