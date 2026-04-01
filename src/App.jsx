@@ -4,7 +4,9 @@ import Header from "./components/Header";
 import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(true);
+  const [sidebarOpen, setSidebarOpen] = useState(() =>
+    typeof window !== "undefined" ? window.innerWidth >= 1280 : true
+  );
 
   return (
     <div className="min-h-screen bg-[#151d2a] text-[#c7d0dd]">
